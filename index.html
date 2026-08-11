@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federico Bucayan | Senior Supply Chain Planning & Data Analytics Leader</title>
+  <meta name="description" content="Portfolio of Federico Bucayan, Commercial Planning & Buying Professional with 10+ years of experience at adidas, Johnson & Johnson, AB InBev, and Toyota. Specializing in demand planning, S&OP, and business intelligence.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            slate: {
+              950: '#030712',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-700 font-sans selection:bg-sky-200 selection:text-sky-900">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-slate-200/60 bg-white/80">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo (Solid color, no gradient) -->
+      <a href="#hero" class="flex items-center space-x-2 text-lg font-bold tracking-tight hover:opacity-80 transition-opacity">
+        <span class="text-slate-900 font-extrabold font-heading text-xl">Federico Bucayan</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#about" class="nav-link text-slate-600 hover:text-slate-900 transition-colors py-1">About</a>
+        <a href="#experience" class="nav-link text-slate-600 hover:text-slate-900 transition-colors py-1">Experience</a>
+        <a href="#projects" class="nav-link text-slate-600 hover:text-slate-900 transition-colors py-1">Projects & Dashboards</a>
+        <a href="#skills" class="nav-link text-slate-600 hover:text-slate-900 transition-colors py-1">Skills & Tools</a>
+        <a href="#education" class="nav-link text-slate-600 hover:text-slate-900 transition-colors py-1">Education</a>
+      </nav>
+
+      <!-- Desktop CTA (Solid background) -->
+      <div class="hidden md:block">
+        <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+          Get In Touch
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menu-toggle" class="md:hidden text-slate-600 hover:text-slate-950 focus:outline-none" aria-label="Toggle navigation menu">
+        <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+        <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+      </button>
+    </div>
+
+    <!-- Scroll Progress Indicator (Solid color, no gradient) -->
+    <div class="w-full h-[2px] bg-slate-100">
+      <div id="scroll-progress" class="h-full w-0 bg-emerald-600 transition-all duration-75"></div>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden glass-panel border-b border-slate-200/80 bg-white/95 absolute w-full left-0 px-6 py-6 space-y-4">
+      <a href="#about" class="block text-base font-medium text-slate-600 hover:text-emerald-600 py-1">About</a>
+      <a href="#experience" class="block text-base font-medium text-slate-600 hover:text-emerald-600 py-1">Experience</a>
+      <a href="#projects" class="block text-base font-medium text-slate-600 hover:text-emerald-600 py-1">Projects & Dashboards</a>
+      <a href="#skills" class="block text-base font-medium text-slate-600 hover:text-emerald-600 py-1">Skills & Tools</a>
+      <a href="#education" class="block text-base font-medium text-slate-600 hover:text-emerald-600 py-1">Education</a>
+      <a href="#contact" class="block text-center w-full px-5 py-3 rounded-lg text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700">
+        Get In Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Soft Glow Background Elements for Light Mode -->
+  <div class="relative w-full overflow-hidden">
+    <div class="glow-bg glow-emerald top-10 left-10 animate-pulse-slow"></div>
+    <div class="glow-bg glow-cyan top-[600px] right-10 animate-pulse-slow" style="animation-delay: -4s"></div>
+    <div class="glow-bg glow-emerald top-[1800px] left-[15%] animate-pulse-slow" style="animation-delay: -2s"></div>
+    <div class="glow-bg glow-cyan top-[3000px] right-[20%] animate-pulse-slow" style="animation-delay: -6s"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center pt-28 pb-16 px-6 relative z-10">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left order-2 lg:order-1">
+          <!-- Headline (Solid colors, no gradients) -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight font-heading">
+            Federico Bucayan
+            <span class="block text-emerald-600 mt-2">Analytics, Planning and Execution Leader</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-slate-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+            10+ years driving assortment & merchandise planning, demand forecasting, S&OP/IBP processes, and commercial results for global brands like adidas and Johnson & Johnson.
+          </p>
+
+          <!-- CTAs (Solid color backgrounds, no gradients) -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#projects" class="w-full sm:w-auto text-center px-8 py-4 rounded-full font-semibold text-white bg-emerald-600 hover:bg-emerald-700 hover:shadow-xl hover:shadow-emerald-600/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-2">
+              <span>View Dashboards</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/federicobucayan/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-8 py-4 rounded-full font-semibold text-white bg-[#0077b5] hover:bg-[#005582] hover:shadow-xl hover:shadow-[#0077b5]/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center">
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Image Mockup (No floating cards) -->
+        <div class="lg:col-span-5 flex justify-center order-1 lg:order-2">
+          <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 group">
+            <!-- Glow background behind photo -->
+            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-emerald-400 to-sky-400 opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-700"></div>
+            
+            <!-- Picture container -->
+            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md group-hover:scale-[1.01] transition-transform duration-500">
+              <img id="hero-portrait" src="assets/Profile_Pic.jpg" alt="Federico Bucayan" class="w-full h-full object-cover contrast-[1.02] transition-all duration-700">
+              <!-- Visual shadow overlays -->
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-transparent to-transparent"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Executive Summary & Impact Metrics -->
+    <section id="about" class="py-24 px-6 border-t border-slate-200/60 relative z-10 bg-white/40">
+      <div class="max-w-7xl mx-auto space-y-16">
+        
+        <!-- Section Header (Solid color underlines) -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-heading">
+            Executive Competencies & Business Impact
+          </h2>
+          <div class="h-1 w-20 bg-emerald-600 mx-auto rounded-full"></div>
+          <p class="text-slate-500 text-sm sm:text-base">
+            Translating complex operations and multi-source retail datasets into concrete action plans. Focusing on margins, inventory health, and cross-functional alignment.
+          </p>
+        </div>
+
+        <!-- Competency Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Pillar 1 -->
+          <div class="glass-panel glass-panel-hover bg-white border-slate-200/60 p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-55 flex items-center justify-center text-emerald-600" style="background-color: #ecfdf5;">
+                <i data-lucide="package" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 font-heading">DTC Buying & Trading</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Orchestration of rolling demand plans (RDP), Open to Buy (OTB), product allocation, and pricing & markdown strategies across Retail, Franchise, and E-commerce.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">OTB Strategy</span>
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">Markdown Optimization</span>
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">Range Management</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="glass-panel glass-panel-hover bg-white border-slate-200/60 p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-55 flex items-center justify-center text-emerald-600" style="background-color: #f0f9ff;">
+                <i data-lucide="shuffle" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 font-heading">Demand & Supply Planning</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Leading regional IBP and S&OP cycles, aligning historical sales, marketing, and commercial plans to hit Finance targets while optimizing product availability.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">Statistical Forecasting</span>
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">SAP APO Key User</span>
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">MRP</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="glass-panel glass-panel-hover bg-white border-slate-200/60 p-8 rounded-2xl flex flex-col justify-between shadow-sm">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600" style="background-color: #ecfdf5;">
+                <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 font-heading">Business Intelligence & Tools</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Building custom business intelligence tools. Designing data pipelines, database models, and dashboards with advanced Excel, Power Query, Power Pivot, and Power BI.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">Power BI & DAX</span>
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">SAP APO Customization</span>
+              <span class="px-2.5 py-1 rounded bg-slate-50 text-slate-600 text-xs border border-slate-100">Data pipelines</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Metric Counter Stats Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+          
+          <!-- Card 1: Retail Net Sales YoY -->
+          <div class="glass-panel bg-white border-slate-200/60 card-accent-top p-6 rounded-xl text-center shadow-sm">
+            <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading stat-counter" data-target="46" data-suffix="%" data-decimals="0">0%</div>
+            <div class="text-xs sm:text-sm font-semibold text-emerald-600 mt-1">2024 Sales Growth</div>
+            <p class="text-[11px] text-slate-400 mt-2">Retail Net Sales YoY</p>
+          </div>
+
+          <!-- Card 2: Franchise Net Sales YoY -->
+          <div class="glass-panel bg-white border-slate-200/60 card-accent-top p-6 rounded-xl text-center shadow-sm">
+            <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading stat-counter" data-target="26" data-suffix="%" data-decimals="0">0%</div>
+            <div class="text-xs sm:text-sm font-semibold text-emerald-600 mt-1">2026 Sales Growth</div>
+            <p class="text-[11px] text-slate-400 mt-2">Franchise Net Sales YoY</p>
+          </div>
+
+          <!-- Card 3: SKU's Across Channels -->
+          <div class="glass-panel bg-white border-slate-200/60 card-accent-top p-6 rounded-xl text-center shadow-sm">
+            <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading stat-counter" data-target="4000" data-prefix="+" data-decimals="0">+0</div>
+            <div class="text-xs sm:text-sm font-semibold text-emerald-600 mt-1">SKUs Managed</div>
+            <p class="text-[11px] text-slate-400 mt-2">SKU's Across Channels</p>
+          </div>
+
+          <!-- Card 4: Demand Planning across Latam -->
+          <div class="glass-panel bg-white border-slate-200/60 card-accent-top p-6 rounded-xl text-center shadow-sm">
+            <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-heading stat-counter" data-target="7" data-suffix=" Countries" data-decimals="0">0</div>
+            <div class="text-xs sm:text-sm font-semibold text-emerald-600 mt-1">Market Scope</div>
+            <p class="text-[11px] text-slate-400 mt-2">Demand Planning across Latam</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="py-24 px-6 border-t border-slate-200/60 relative z-10">
+      <div class="max-w-4xl mx-auto space-y-16">
+        
+        <!-- Section Header (Solid color underlines) -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-heading">
+            Professional Experience
+          </h2>
+          <div class="h-1 w-20 bg-emerald-600 mx-auto rounded-full"></div>
+          <p class="text-slate-550 text-sm sm:text-base">
+            Over a decade of leadership in commercial planning, buying strategies, and analytics implementation.
+          </p>
+        </div>
+
+        <!-- Timeline Wrapper -->
+        <div class="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-2 sm:ml-4 space-y-12">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl space-y-4 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900 font-heading">Buying & Trading Manager</h3>
+                  <p class="text-sm font-semibold text-emerald-600">adidas</p>
+                </div>
+                <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-semibold self-start sm:self-center">
+                  Feb 2023 – Present
+                </span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Lead seasonal Rolling Demand Plan (RDP), Open to Buy (OTB), and buying strategies for over 4,000 SKUs in Direct-to-Consumer (DTC) channels, covering Retail (Panama), Franchise (Panama, Venezuela, Caribbean, and Bolivia), and E-commerce (Ecuador).
+              </p>
+              <ul class="space-y-2 text-slate-505 text-sm pl-4 list-disc marker:text-sky-550">
+                <li>Optimize product allocation and store distribution dynamics based on sell-through trends, margin goals, and launch calendars.</li>
+                <li>Direct the Integrated Business Planning (IBP) process for the Retail channel, aligning net sales, margins, and volumes with Corporate Finance.</li>
+                <li>Define pricing and markdown models for factory outlets and retail branches to optimize inventory rotation and margins.</li>
+                <li>**Key Achievement:** Designed store product allocation system and KPIs, resulting in Retail Net Sales +46%, units +36%, and margin +2.4 p.p. (2024 vs. 2023). Achieved Franchise Net Sales +26% (2026 vs. 2025).</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Rolling Demand Plan</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Open to Buy (OTB)</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Pricing & Markdowns</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">DTC Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl space-y-4 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900 font-heading">ECOM Business Performance Manager (Short-Term Assignment)</h3>
+                  <p class="text-sm font-semibold text-emerald-600">adidas</p>
+                </div>
+                <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-semibold self-start sm:self-center">
+                  Oct 2022 – Feb 2023
+                </span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Led the channel's daily performance operations and financial alignment in Chile.
+              </p>
+              <ul class="space-y-2 text-slate-505 text-sm pl-4 list-disc marker:text-emerald-555">
+                <li>Managed the E-commerce channel IBP process, giving daily visibility into net sales, margins, and logistics capacity.</li>
+                <li>Monitored daily conversion, traffic, and order fulfillment parameters, designing tactical adjustments to meet quarterly targets.</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">E-commerce Operations</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Daily Performance Tracking</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Logistical Alignment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl space-y-4 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900 font-heading">Demand Planning Manager</h3>
+                  <p class="text-sm font-semibold text-emerald-600">adidas</p>
+                </div>
+                <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-semibold self-start sm:self-center">
+                  Dec 2018 – Oct 2022
+                </span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Managed demand forecasting for the Training category across Mexico, Panama, Colombia, Chile, Peru, Brazil, and Argentina, supervising over 1,500 SKUs and 4 distribution channels.
+              </p>
+              <ul class="space-y-2 text-slate-500 text-sm pl-4 list-disc marker:text-emerald-600">
+                <li>Coordinated regional IBP schedules, supplying forecasts up to a 24-month horizon to global offices.</li>
+                <li>Acted as SAP APO & AFS Key User to train personnel, standardize practices, and improve system processes.</li>
+                <li>Managed the demand plan and inventory alignment specifically for the Brazil Retail and E-commerce channels.</li>
+                <li>**Key Achievement:** Developed custom demand upload tools within SAP APO & AFS that remain actively used by the planning team today.</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">SAP APO / AFS Key User</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Regional S&OP</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Training Category</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Inventory Replenishment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl space-y-4 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <h3 class="text-xl font-bold text-slate-900 font-heading">Demand Planning Analyst</h3>
+                  <p class="text-sm font-semibold text-emerald-600">Johnson & Johnson</p>
+                </div>
+                <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-semibold self-start sm:self-center">
+                  Sep 2016 – Dec 2018
+                </span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Oversaw demand forecasting and S&OP alignment cycles for over 200 consumer health SKUs across Panama, Honduras, and El Salvador.
+              </p>
+              <ul class="space-y-2 text-slate-500 text-sm pl-4 list-disc marker:text-emerald-600">
+                <li>Embedded historical sales profiles, promotional modifiers, and statistical analysis into monthly forecasts.</li>
+                <li>Directed the CPFR (Collaborative Planning, Forecasting & Replenishment) process with Walmart Honduras.</li>
+                <li>Optimized forecasting metrics (monitored and improved MAPE and Bias percentages).</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">CPFR Processes</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">MAPE / Bias Metrics</span>
+                <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded border border-slate-200/40">Walmart Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Collapsible Prior Experience Section -->
+        <div class="pt-6">
+          <details class="group glass-panel bg-white border-slate-200/60 rounded-2xl overflow-hidden shadow-sm">
+            <summary class="flex justify-between items-center p-6 cursor-pointer text-slate-900 font-semibold list-none select-none hover:bg-slate-50/50 transition-colors">
+              <span class="font-heading text-lg flex items-center space-x-2">
+                <i data-lucide="history" class="w-5 h-5 text-emerald-600"></i>
+                <span>Prior Professional History (2012 - 2016)</span>
+              </span>
+              <span class="transition-transform duration-300 group-open:rotate-180">
+                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i>
+              </span>
+            </summary>
+            
+            <div class="p-6 border-t border-slate-100 bg-slate-50/20 space-y-6">
+              
+              <!-- Toyota -->
+              <div class="space-y-2 border-b border-slate-100 pb-4">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-900">Revenue & Pricing Analyst</h4>
+                    <p class="text-xs text-slate-400">Ricardo Perez S.A. / Toyota Panama</p>
+                  </div>
+                  <span class="text-[10px] font-semibold text-slate-400">Apr 2016 – Sep 2016</span>
+                </div>
+                <p class="text-xs text-slate-505 leading-relaxed">
+                  Formulated pricing and discount guidelines for the Toyota Certified Used Vehicles division. Analyzed competitors, inventory values, and costs to protect target margins.
+                </p>
+              </div>
+
+              <!-- AB Inbev -->
+              <div class="space-y-2 border-b border-slate-100 pb-4">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-900">Materials Requirement Planner (MRP)</h4>
+                    <p class="text-xs text-slate-400">Cervecería Nacional S.A. / AB InBev</p>
+                  </div>
+                  <span class="text-[10px] font-semibold text-slate-400">May 2015 – Mar 2016</span>
+                </div>
+                <p class="text-xs text-slate-505 leading-relaxed">
+                  Managed materials requirements (122 SKUs) for beverage packaging and raw components. Wrote purchasing orders, monitored stock levels, and acted as SAP MRP SME for a corporate system migration in Colombia.
+                </p>
+              </div>
+
+              <!-- Grupo Rey -->
+              <div class="space-y-2 border-b border-slate-100 pb-4">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-900">Merchandising Specialist</h4>
+                    <p class="text-xs text-slate-400">Grupo Rey (Grocery Supermarket Chain)</p>
+                  </div>
+                  <span class="text-[10px] font-semibold text-slate-400">Mar 2014 – May 2015</span>
+                </div>
+                <p class="text-xs text-slate-505 leading-relaxed">
+                  Supervised logistics and supply allocations for 600+ dry and refrigerated grocery SKUs, keeping shelf fill rates optimized across 60+ retail branches.
+                </p>
+              </div>
+
+              <!-- Fletes Consolidados -->
+              <div class="space-y-2">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                  <div>
+                    <h4 class="text-sm font-bold text-slate-900">Logistics Assistant</h4>
+                    <p class="text-xs text-slate-400">Fletes Consolidados S.A.</p>
+                  </div>
+                  <span class="text-[10px] font-semibold text-slate-400">Mar 2012 – Mar 2014</span>
+                </div>
+                <p class="text-xs text-slate-505 leading-relaxed">
+                  Handled customs manifest clearance, export document verification, and consolidated container shipping routes with ocean freight lines.
+                </p>
+              </div>
+
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+    <section id="projects" class="py-24 px-6 border-t border-slate-200/60 relative z-10 bg-white/40">
+      <div class="max-w-7xl mx-auto space-y-16">
+        
+        <!-- Section Header (Solid sky-600 divider line instead of gradient) -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-heading">
+            Interactive Project Showcase
+          </h2>
+          <div class="h-1 w-20 bg-emerald-600 mx-auto rounded-full"></div>
+          <p class="text-slate-550 text-sm sm:text-base">
+            Explore my actual projects deployed online, showcasing interactive data dashboards and my digital-first mindset in leveraging AI and Power BI to solve complex retail and supply chain challenges
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-emerald-500/30 bg-emerald-50 text-emerald-600 transition-all" data-filter="web">Web Apps</button>
+          <button class="filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-slate-200 text-slate-500 hover:border-slate-300 hover:bg-slate-100/50 transition-all" data-filter="powerbi">Power BI</button>
+        </div>
+
+        <!-- Projects Cards Grid (Enlarged and focused to show actual screenshots of reports) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch relative min-h-[500px]">
+          
+          <!-- PROJECT 1: Web App Retail Performance Dashboard Card -->
+          <div class="project-card glass-panel bg-white border-slate-200/60 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="web">
+            <div>
+              <!-- Header bar -->
+              <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/20">
+                <h3 class="text-lg font-bold text-slate-900 font-heading">Retail Performance Dashboard</h3>
+                <div class="flex items-center space-x-2">
+                  <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-650 p-2 rounded-lg hover:bg-slate-100 transition-all" title="View Source on GitHub">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                  <a href="https://federicobucayan.github.io/Retail-Performance-Dashboard/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-600 p-2 rounded-lg hover:bg-slate-100 transition-all" title="View Live Deployed Page">
+                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Report Screenshot Display Area -->
+              <div class="p-6 bg-slate-100 border-b border-slate-200/60 relative group overflow-hidden">
+                <div class="border border-slate-200/80 rounded-xl overflow-hidden shadow-sm bg-white aspect-[16/10] relative">
+                  <img src="https://image.thum.io/get/width/1280/crop/800/https://federicobucayan.github.io/Retail-Performance-Dashboard/" onerror="this.onerror=null; this.src='Retail_Performance.jpg';" alt="Retail Performance Dashboard Report Screenshot" class="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-500">
+                  <a href="https://federicobucayan.github.io/Retail-Performance-Dashboard/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-2">
+                    <span class="bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full text-xs font-semibold text-slate-900 flex items-center space-x-2 shadow-lg">
+                      <i data-lucide="external-link" class="w-3.5 h-3.5 text-emerald-600"></i>
+                      <span>Open Interactive Report</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Content Description -->
+              <div class="p-6 space-y-4">
+                <p class="text-slate-655 text-sm leading-relaxed">
+                  A comprehensive retail analytics dashboard designed to monitor sales, conversion rate, UPT, ATV, and best-seller performance to facilitate retail decision making
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA links -->
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
+                <a href="https://federicobucayan.github.io/Retail-Performance-Dashboard/" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 transition-all shadow-sm flex items-center justify-center space-x-2">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  <span>Open Live Report</span>
+                </a>
+                <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center justify-center space-x-2 text-slate-700">
+                  <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Web App Demand Planning Dashboard Card -->
+          <div class="project-card glass-panel bg-white border-slate-200/60 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="web">
+            <div>
+              <!-- Header bar -->
+              <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/20">
+                <h3 class="text-lg font-bold text-slate-900 font-heading">Demand Planning Dashboard</h3>
+                <div class="flex items-center space-x-2">
+                  <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-650 p-2 rounded-lg hover:bg-slate-100 transition-all" title="View Source on GitHub">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                  <a href="https://federicobucayan.github.io/Demand-Planning-Dashboard/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-655 p-2 rounded-lg hover:bg-slate-100 transition-all" title="View Live Deployed Page">
+                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Report Screenshot Display Area -->
+              <div class="p-6 bg-slate-100 border-b border-slate-200/60 relative group overflow-hidden">
+                <div class="border border-slate-200/80 rounded-xl overflow-hidden shadow-sm bg-white aspect-[16/10] relative">
+                  <img src="https://image.thum.io/get/width/1280/crop/800/https://federicobucayan.github.io/Demand-Planning-Dashboard/" onerror="this.onerror=null; this.src='Demand_Planning.jpg';" alt="Demand Planning Dashboard Report Screenshot" class="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-500">
+                  <a href="https://federicobucayan.github.io/Demand-Planning-Dashboard/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-2">
+                    <span class="bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full text-xs font-semibold text-slate-900 flex items-center space-x-2 shadow-lg">
+                      <i data-lucide="external-link" class="w-3.5 h-3.5 text-emerald-600"></i>
+                      <span>Open Interactive Report</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Content Description -->
+              <div class="p-6 space-y-4">
+                <p class="text-slate-655 text-sm leading-relaxed">
+                  An interactive demand planning dashboard built to track forecast accuracy versus actual sales, highlight variance drivers, and empower data-backed decisions
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA links -->
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
+                <a href="https://federicobucayan.github.io/Demand-Planning-Dashboard/" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 transition-all shadow-sm flex items-center justify-center space-x-2">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  <span>Open Live Report</span>
+                </a>
+                <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center justify-center space-x-2 text-slate-700">
+                  <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Power BI Retail Performance Dashboard Card (WIP Banner) -->
+          <div class="project-card glass-panel bg-white border-slate-200/60 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="powerbi" style="display: none;">
+            <div>
+              <!-- Header bar -->
+              <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/20">
+                <h3 class="text-lg font-bold text-slate-900 font-heading">Retail Performance Dashboard (Power BI)</h3>
+                <div class="flex items-center space-x-2">
+                  <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-650 p-2 rounded-lg hover:bg-slate-100 transition-all" title="View Source on GitHub">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                  <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard/blob/main/Retail_Performance_Dashboard_PBI_PDF.pdf" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-655 p-2 rounded-lg hover:bg-slate-100 transition-all" title="Open PDF Report">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Report Screenshot Display Area with WIP Banner -->
+              <div class="p-6 bg-slate-100 border-b border-slate-200/60 relative group overflow-hidden">
+                <div class="border border-slate-200/80 rounded-xl overflow-hidden shadow-sm bg-white aspect-[16/10] relative wip-container">
+                  <!-- WIP Diagonal Ribbon Banner -->
+                  <div class="wip-ribbon">WIP</div>
+                  <img src="assets/Retail_Performance_PBI.jpg" alt="Retail Performance Power BI Report Screenshot" class="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-500">
+                  <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard/blob/main/Retail_Performance_Dashboard_PBI_PDF.pdf" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-2">
+                    <span class="bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full text-xs font-semibold text-slate-900 flex items-center space-x-2 shadow-lg">
+                      <i data-lucide="file-text" class="w-3.5 h-3.5 text-emerald-600"></i>
+                      <span>Open PDF Report</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Content Description -->
+              <div class="p-6 space-y-4">
+                <p class="text-slate-655 text-sm leading-relaxed">
+                  Power BI implementation of the Retail Performance analytics suite. Features a YoY Performance Comparison Matrix, merchandising hierarchies, store breakdowns, and margin target tracking modeled in DAX.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA links -->
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
+                <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard/blob/main/Retail_Performance_Dashboard_PBI_PDF.pdf" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 transition-all shadow-sm flex items-center justify-center space-x-2">
+                  <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                  <span>Open PDF Report</span>
+                </a>
+                <a href="https://github.com/FedericoBucayan/Retail-Performance-Dashboard" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center justify-center space-x-2 text-slate-700">
+                  <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Power BI Demand Planning Dashboard Card (WIP Banner) -->
+          <div class="project-card glass-panel bg-white border-slate-200/60 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between" data-category="powerbi" style="display: none;">
+            <div>
+              <!-- Header bar -->
+              <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50/20">
+                <h3 class="text-lg font-bold text-slate-900 font-heading">Demand Planning Dashboard (Power BI)</h3>
+                <div class="flex items-center space-x-2">
+                  <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-650 p-2 rounded-lg hover:bg-slate-100 transition-all" title="View Source on GitHub">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                  </a>
+                  <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard/blob/main/Demand_Planning_Dashboard_PBI_PDF.pdf" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-655 p-2 rounded-lg hover:bg-slate-100 transition-all" title="Open PDF Report">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Report Screenshot Display Area with WIP Banner -->
+              <div class="p-6 bg-slate-100 border-b border-slate-200/60 relative group overflow-hidden">
+                <div class="border border-slate-200/80 rounded-xl overflow-hidden shadow-sm bg-white aspect-[16/10] relative wip-container">
+                  <!-- WIP Diagonal Ribbon Banner -->
+                  <div class="wip-ribbon">WIP</div>
+                  <img src="assets/Demand_Planning_PBI.jpg" alt="Demand Planning Power BI Report Screenshot" class="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-500">
+                  <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard/blob/main/Demand_Planning_Dashboard_PBI_PDF.pdf" target="_blank" rel="noopener noreferrer" class="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-2">
+                    <span class="bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-full text-xs font-semibold text-slate-900 flex items-center space-x-2 shadow-lg">
+                      <i data-lucide="file-text" class="w-3.5 h-3.5 text-emerald-600"></i>
+                      <span>Open PDF Report</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Content Description -->
+              <div class="p-6 space-y-4">
+                <p class="text-slate-655 text-sm leading-relaxed">
+                  Power BI implementation of the Demand Intelligence forecasting platform. Tracks S&OP metrics, forecast accuracy versus sales actuals, and bias variance models using DAX measures.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTA links -->
+            <div class="p-6 pt-0 space-y-4">
+              <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
+                <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard/blob/main/Demand_Planning_Dashboard_PBI_PDF.pdf" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 transition-all shadow-sm flex items-center justify-center space-x-2">
+                  <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                  <span>Open PDF Report</span>
+                </a>
+                <a href="https://github.com/FedericoBucayan/Demand-Planning-Dashboard" target="_blank" rel="noopener noreferrer" class="w-full text-center px-4 py-2.5 rounded-lg text-xs font-semibold border border-slate-200 bg-white hover:bg-slate-50 transition-all flex items-center justify-center space-x-2 text-slate-700">
+                  <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills" class="py-24 px-6 border-t border-slate-200/60 relative z-10">
+      <div class="max-w-6xl mx-auto space-y-16">
+        
+        <!-- Section Header (Solid underlines) -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-heading">
+            Skills & Tools
+          </h2>
+          <div class="h-1 w-20 bg-emerald-600 mx-auto rounded-full"></div>
+          <p class="text-slate-550 text-sm sm:text-base">
+            Focused overview of analytics platforms, enterprise ERP systems, and AI developer tools.
+          </p>
+        </div>
+
+        <!-- Focused Skills Matrix (Visually Proportionate Centered Card) -->
+        <div class="max-w-2xl mx-auto glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl border-t-2 border-emerald-500/50 shadow-sm space-y-6">
+          
+          <!-- Excel (PowerQuery / Pivot) -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-sm">
+              <span class="font-semibold text-slate-800 flex items-center space-x-2.5">
+                <i data-lucide="file-spreadsheet" class="w-4 h-4 text-emerald-600"></i>
+                <span>Excel (PowerQuery / Pivot)</span>
+              </span>
+              <span class="text-emerald-600 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100/60">Expert</span>
+            </div>
+            <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-500 rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <!-- Power BI -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-sm">
+              <span class="font-semibold text-slate-800 flex items-center space-x-2.5">
+                <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-600"></i>
+                <span>Power BI</span>
+              </span>
+              <span class="text-emerald-600 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100/60">Proficient</span>
+            </div>
+            <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-500 rounded-full" style="width: 79%"></div>
+            </div>
+          </div>
+
+          <!-- SAP APO & AFS Systems -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-sm">
+              <span class="font-semibold text-slate-800 flex items-center space-x-2.5">
+                <i data-lucide="database" class="w-4 h-4 text-emerald-600"></i>
+                <span>SAP APO & AFS Systems</span>
+              </span>
+              <span class="text-emerald-600 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100/60">Proficient</span>
+            </div>
+            <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-500 rounded-full" style="width: 79%"></div>
+            </div>
+          </div>
+
+          <!-- Gemini Antigravity IDE -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-sm">
+              <span class="font-semibold text-slate-800 flex items-center space-x-2.5">
+                <i data-lucide="sparkles" class="w-4 h-4 text-emerald-600"></i>
+                <span>Gemini Antigravity IDE</span>
+              </span>
+              <span class="text-emerald-600 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100/60">Proficient</span>
+            </div>
+            <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-500 rounded-full" style="width: 79%"></div>
+            </div>
+          </div>
+
+          <!-- English -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-sm">
+              <span class="font-semibold text-slate-800 flex items-center space-x-2.5">
+                <i data-lucide="languages" class="w-4 h-4 text-emerald-600"></i>
+                <span>English</span>
+              </span>
+              <span class="text-emerald-600 font-semibold text-xs bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100/60">Expert</span>
+            </div>
+            <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-500 rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-6 border-t border-slate-200/60 relative z-10 bg-white/40">
+      <div class="max-w-5xl mx-auto space-y-16">
+        
+        <!-- Section Header (Solid underlines) -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-heading">
+            Education & Certifications
+          </h2>
+          <div class="h-1 w-20 bg-emerald-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Master's -->
+          <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl flex space-x-4 items-start shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">2020 Graduate</span>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Master's Degree in Logistics Systems and Operations</h3>
+              <p class="text-xs font-semibold text-emerald-600">Specializing in Demand Planning</p>
+              <p class="text-sm text-slate-505">Universidad Tecnológica de Panamá</p>
+            </div>
+          </div>
+
+          <!-- Bachelor's -->
+          <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl flex space-x-4 items-start shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 shrink-0">
+              <i data-lucide="book-open" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-2">
+              <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">2013 Graduate</span>
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Bachelor's Degree in Logistics and Multimodal Transport</h3>
+              <p class="text-xs font-semibold text-emerald-600">Graduate</p>
+              <p class="text-sm text-slate-505">Universidad Tecnológica de Panamá</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-200/60 relative z-10">
+      <div class="max-w-5xl mx-auto space-y-16">
+        
+        <!-- Section Header (Solid underlines) -->
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 font-heading">
+            Get In Touch
+          </h2>
+          <div class="h-1 w-20 bg-emerald-600 mx-auto rounded-full"></div>
+          <p class="text-slate-550 text-sm sm:text-base">
+            Let's discuss how customized analytics can drive efficiency in your team.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Contact Detail Cards -->
+          <div class="md:col-span-5 flex flex-col justify-between gap-6">
+            <div class="glass-panel bg-white border-slate-200/60 p-6 rounded-2xl space-y-6 flex-1 flex flex-col justify-center shadow-sm">
+              <h3 class="text-lg font-bold text-slate-900 font-heading">Contact Information</h3>
+              <p class="text-slate-555 text-xs sm:text-sm leading-relaxed">
+                Connect directly for collaboration initiatives, hiring discussions, or questions about the analytical widgets shown here.
+              </p>
+
+              <div class="space-y-4 pt-2">
+                <!-- Location -->
+                <div class="flex items-center space-x-3 p-3 rounded-xl bg-slate-50/50 border border-slate-100 text-slate-700">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600 border border-emerald-100/50">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10px] text-slate-400 font-semibold uppercase">Location</p>
+                    <p class="text-xs sm:text-sm font-medium">Panama City, Panama</p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <a href="mailto:fedebucayan@gmail.com" class="flex items-center space-x-3 p-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all text-slate-700">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600" style="color: #059669; background-color: #ecfdf5;">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10px] text-slate-400 font-semibold uppercase">Email Address</p>
+                    <p class="text-xs sm:text-sm font-medium">fedebucayan@gmail.com</p>
+                  </div>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:+50769484601" class="flex items-center space-x-3 p-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all text-slate-700">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600" style="background-color: #ecfdf5;">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10px] text-slate-400 font-semibold uppercase">Phone Number</p>
+                    <p class="text-xs sm:text-sm font-medium">+507 6948 – 4601</p>
+                  </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/federicobucayan/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 p-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all text-slate-700">
+                  <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-slate-50 border border-slate-100">
+                    <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="w-7 h-7 object-contain">
+                  </div>
+                  <div>
+                    <p class="text-[10px] text-slate-400 font-semibold uppercase">LinkedIn Profile</p>
+                    <p class="text-xs sm:text-sm font-medium">federicobucayan</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Container -->
+          <div class="md:col-span-7">
+            <div class="glass-panel bg-white border-slate-200/60 p-6 sm:p-8 rounded-2xl relative overflow-hidden shadow-sm wip-container">
+              <!-- WIP Diagonal Ribbon Banner -->
+              <div class="wip-ribbon">WIP</div>
+              
+              <!-- Form Submit Success Banner -->
+              <div id="form-success" class="hidden absolute inset-0 bg-white/95 z-20 flex-col items-center justify-center text-center p-6 space-y-3">
+                <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 border border-emerald-100">
+                  <i data-lucide="check" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 font-heading">Message Sent Successfully!</h4>
+                <p class="text-slate-500 text-xs sm:text-sm max-w-xs">
+                  Thank you for reaching out. Federico will get back to you shortly.
+                </p>
+              </div>
+
+              <!-- HTML Form -->
+              <form id="contact-form" class="space-y-4">
+                <div class="form-group flex flex-col space-y-1">
+                  <label for="form-name" class="form-label">Full Name</label>
+                  <input type="text" id="form-name" required placeholder="e.g. John Doe" class="form-input text-sm">
+                </div>
+
+                <div class="form-group flex flex-col space-y-1">
+                  <label for="form-email" class="form-label">Email Address</label>
+                  <input type="email" id="form-email" required placeholder="e.g. john@company.com" class="form-input text-sm">
+                </div>
+
+                <div class="form-group flex flex-col space-y-1">
+                  <label for="form-message" class="form-label">Message</label>
+                  <textarea id="form-message" rows="4" required placeholder="Outline your project requirements or hiring inquiries here..." class="form-input text-sm resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-lg font-semibold uppercase tracking-wider text-xs text-white bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg hover:shadow-sky-600/10 transition-all flex items-center justify-center space-x-2">
+                  <span>Send Message</span>
+                  <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200 px-6 bg-slate-100 text-slate-500 relative z-10 text-center text-xs">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>&copy; 2026 Federico Bucayan. All rights reserved.</p>
+        <p class="flex items-center space-x-1">
+          <span>Developed with passion using HTML, Tailwind CSS & JavaScript</span>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Custom Interactive Scripts -->
+  <script src="assets/scripts.js"></script>
+
+  <!-- Lucide Script Initialization -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
