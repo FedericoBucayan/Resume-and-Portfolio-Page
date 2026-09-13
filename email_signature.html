@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Email Signature | Federico Bucayan Rivera</title>
+  
+  <!-- Google Fonts for the Presentation Page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS for the Presentation Page UI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    .glass-card {
+      background: rgba(15, 23, 42, 0.45);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .signature-container {
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-[#030712] text-slate-100 font-sans min-h-screen selection:bg-cyan-500 selection:text-slate-950">
+
+  <div class="max-w-5xl mx-auto px-4 py-12 md:py-16">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <div class="inline-flex items-center space-x-2 text-sm text-cyan-400 font-semibold tracking-wider uppercase mb-3 bg-cyan-950/50 px-3 py-1 rounded-full border border-cyan-800/30">
+        <span>Email Template Engineer</span>
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold font-heading bg-gradient-to-r from-white via-slate-200 to-slate-400 text-transparent bg-clip-text tracking-tight mb-4">
+        Professional HTML Email Signature
+      </h1>
+      <p class="text-slate-400 max-w-2xl mx-auto text-base md:text-lg">
+        A clean, modern, standalone HTML email signature engineered to render flawlessly in major email clients (Gmail, Outlook, Apple Mail).
+      </p>
+    </header>
+
+    <!-- Main Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Left Column: Live Preview & Controls -->
+      <div class="lg:col-span-7 space-y-6">
+        
+        <!-- Live Preview Card -->
+        <div class="glass-card rounded-2xl overflow-hidden shadow-2xl">
+          <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <h2 class="font-heading font-semibold text-slate-200">Live Preview</h2>
+            </div>
+            
+            <!-- Background Toggle -->
+            <div class="flex items-center space-x-2 text-xs bg-slate-900/80 p-1 rounded-lg border border-slate-800">
+              <button onclick="togglePreviewBg('light')" id="bg-btn-light" class="px-2.5 py-1 rounded-md bg-slate-800 text-white font-medium shadow-sm transition-all duration-200">
+                Light Bg
+              </button>
+              <button onclick="togglePreviewBg('dark')" id="bg-btn-dark" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition-all duration-200">
+                Dark Bg
+              </button>
+            </div>
+          </div>
+          
+          <!-- Outer frame mimicking email body -->
+          <div id="preview-outer" class="p-8 signature-container bg-white flex items-center justify-center min-h-[200px]">
+            <div id="signature-preview-container" class="w-full max-w-md">
+              
+              <!-- ==================== START OF EMAIL SIGNATURE ==================== -->
+              <table id="email-signature-table" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; min-width: 320px; max-width: 480px; width: 100%; line-height: 1.4; background-color: transparent;">
+                <tr>
+                  <!-- Left Column: Profile Pic -->
+                  <td valign="top" style="width: 100px; padding-right: 16px; padding-bottom: 8px;">
+                    <img id="sig-avatar" src="https://avatars.githubusercontent.com/FedericoBucayan" alt="Federico Bucayan Rivera" width="100" height="100" style="display: block; width: 100px; height: 100px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; object-fit: cover; border: 0; outline: none; text-decoration: none;" />
+                  </td>
+                  <!-- Right Column: Stacked Info & Socials -->
+                  <td valign="top" style="border-left: 2px solid #e2e8f0; padding-left: 16px; padding-bottom: 8px; font-family: Arial, Helvetica, sans-serif;">
+                    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; width: 100%;">
+                      <!-- Name -->
+                      <tr>
+                        <td style="font-size: 16px; font-weight: bold; color: #0f172a; padding: 0 0 2px 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
+                          Federico Bucayan Rivera
+                        </td>
+                      </tr>
+                      <!-- Title -->
+                      <tr>
+                        <td style="font-size: 13px; font-weight: 500; color: #475569; padding: 0 0 4px 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.35;">
+                          Data Analytics, Retail and Supply Chain Planning Professional
+                        </td>
+                      </tr>
+                      <!-- Location -->
+                      <tr>
+                        <td style="padding: 0 0 6px 0; font-family: Arial, Helvetica, sans-serif; line-height: 1;">
+                          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+                            <tr>
+                              <td valign="middle" style="width: 20px; padding: 0; line-height: 1;">
+                                <img src="https://img.icons8.com/material-rounded/32/334155/marker.png" alt="Location" width="14" height="14" style="display: block; border: 0; width: 14px; height: 14px;" />
+                              </td>
+                              <td valign="middle" style="font-size: 12px; color: #64748b; font-family: Arial, Helvetica, sans-serif; line-height: 1;">
+                                Panama
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Email -->
+                      <tr>
+                        <td style="padding: 0 0 6px 0; font-family: Arial, Helvetica, sans-serif; line-height: 1;">
+                          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+                            <tr>
+                              <td valign="middle" style="width: 20px; padding: 0; line-height: 1;">
+                                <img src="https://img.icons8.com/material-rounded/32/334155/mail.png" alt="Email" width="14" height="14" style="display: block; border: 0; width: 14px; height: 14px;" />
+                              </td>
+                              <td valign="middle" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; line-height: 1;">
+                                <a href="mailto:fedebucayan@gmail.com" style="color: #64748b; text-decoration: none;">fedebucayan@gmail.com</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Phone -->
+                      <tr>
+                        <td style="padding: 0 0 12px 0; font-family: Arial, Helvetica, sans-serif; line-height: 1;">
+                          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+                            <tr>
+                              <td valign="middle" style="width: 20px; padding: 0; line-height: 1;">
+                                <img src="https://img.icons8.com/material-rounded/32/334155/phone.png" alt="Phone" width="14" height="14" style="display: block; border: 0; width: 14px; height: 14px;" />
+                              </td>
+                              <td valign="middle" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; line-height: 1;">
+                                <a href="tel:+50769484601" style="color: #64748b; text-decoration: none;">+507 6948-4601</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Social Media Buttons -->
+                      <tr>
+                        <td style="padding: 0; font-family: Arial, Helvetica, sans-serif;">
+                          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+                            <tr>
+                              <!-- LinkedIn Button -->
+                              <td valign="middle" style="padding-right: 8px; font-family: Arial, Helvetica, sans-serif;">
+                                <a href="https://www.linkedin.com/in/federicobucayan/" target="_blank" style="text-decoration: none; display: inline-block;">
+                                  <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" width="22" height="22" style="display: block; border: 0; width: 22px; height: 22px;" />
+                                </a>
+                              </td>
+                              <!-- GitHub Button -->
+                              <td valign="middle" style="font-family: Arial, Helvetica, sans-serif;">
+                                <a href="https://github.com/FedericoBucayan" target="_blank" style="text-decoration: none; display: inline-block;">
+                                  <img src="https://img.icons8.com/color/48/github.png" alt="GitHub" width="22" height="22" style="display: block; border: 0; width: 22px; height: 22px;" />
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- ==================== END OF EMAIL SIGNATURE ==================== -->
+
+            </div>
+          </div>
+          
+          <div class="px-6 py-5 bg-slate-900/50 border-t border-slate-800/80 flex flex-col sm:flex-row items-center gap-4">
+            <button id="copy-btn" onclick="copySignature()" class="w-full sm:w-auto flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-medium text-sm px-6 py-3 rounded-xl shadow-lg shadow-indigo-600/20 hover:shadow-indigo-700/30 transition-all duration-200">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path>
+              </svg>
+              Copy Signature (Rich Text)
+            </button>
+            <span class="text-xs text-slate-400 text-center sm:text-left">
+              Clicking copies the rich text directly to your clipboard. Ready to paste in Gmail or Outlook.
+            </span>
+          </div>
+        </div>
+
+        <!-- Image Hosting & URL Configurator -->
+        <div class="glass-card rounded-2xl p-6 shadow-xl space-y-4">
+          <h3 class="font-heading font-semibold text-slate-200 flex items-center text-sm">
+            <svg class="w-5 h-5 mr-2 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            Profile Picture Image URL
+          </h3>
+          <div class="space-y-3">
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">Image URL Source:</label>
+              <input type="text" id="image-url-input" oninput="updateImageUrl(this.value)" value="https://avatars.githubusercontent.com/FedericoBucayan" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:ring-1 focus:ring-indigo-500 font-mono" />
+            </div>
+            <div class="text-[11px] text-slate-400 space-y-2 leading-relaxed">
+              <p>
+                <strong>Yes, you can host it on GitHub!</strong> This is the absolute best way to ensure it loads for all recipients.
+              </p>
+              <p>
+                To do this:
+              </p>
+              <ul class="list-disc list-inside space-y-1 pl-1">
+                <li>Upload <code class="bg-slate-900 px-1 py-0.5 rounded text-cyan-300">Profile_Pic.jpg</code> to your portfolio repository on GitHub.</li>
+                <li>Verify your URL structure. The standard raw link for GitHub is: <br>
+                  <code class="bg-slate-900 px-1.5 py-0.5 rounded text-amber-300 break-all select-all font-mono">https://raw.githubusercontent.com/FedericoBucayan/[REPO_NAME]/[BRANCH]/Profile_Pic.jpg</code>
+                </li>
+                <li>Or if hosted via GitHub Pages: <br>
+                  <code class="bg-slate-900 px-1.5 py-0.5 rounded text-amber-300 break-all select-all font-mono">https://federicobucayan.github.io/[REPO_NAME]/Profile_Pic.jpg</code>
+                </li>
+              </ul>
+              <p class="text-cyan-400">
+                &rarr; Paste your updated link above, and this dashboard will automatically update the Live Preview and the Raw HTML Code!
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Instructions & Info -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- How To Use -->
+        <div class="glass-card rounded-2xl p-6 shadow-xl space-y-6">
+          <h2 class="text-xl font-heading font-bold text-slate-100 flex items-center border-b border-slate-800 pb-3">
+            <svg class="w-6 h-6 mr-2 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            Setup Instructions
+          </h2>
+          
+          <!-- Gmail -->
+          <div class="space-y-3">
+            <h3 class="font-heading font-semibold text-slate-200 flex items-center text-sm">
+              <span class="bg-indigo-900/60 text-indigo-300 text-xs px-2 py-0.5 rounded mr-2">Step 1</span>
+              Paste & Save in Gmail
+            </h3>
+            <ol class="list-decimal list-inside text-xs text-slate-300 space-y-2 pl-2">
+              <li>Enter your GitHub URL in the "Profile Picture Image URL" card on the left.</li>
+              <li>Click the **Copy Signature (Rich Text)** button on the preview card.</li>
+              <li>Open your web browser and navigate to **Gmail**.</li>
+              <li>Click the gear icon (Settings) in the top-right corner, then click **See all settings**.</li>
+              <li>Scroll down to the **Signature** section.</li>
+              <li>Click **Create new** (or select your current one).</li>
+              <li>Click inside the signature editor textbox and press **Ctrl+V** (or **Cmd+V** on Mac) to paste.</li>
+              <li>Confirm the profile picture appears loaded.</li>
+              <li>Scroll to the bottom of the page and click **Save Changes**.</li>
+            </ol>
+          </div>
+
+          <!-- Outlook Web -->
+          <div class="space-y-3 border-t border-slate-800/60 pt-4">
+            <h3 class="font-heading font-semibold text-slate-200 flex items-center text-sm">
+              <span class="bg-indigo-900/60 text-indigo-300 text-xs px-2 py-0.5 rounded mr-2">Step 2</span>
+              Outlook Web / Outlook.com
+            </h3>
+            <ol class="list-decimal list-inside text-xs text-slate-300 space-y-2 pl-2">
+              <li>Click the **Copy Signature** button.</li>
+              <li>Go to Outlook.com settings (gear icon) &rarr; **View all Outlook settings** &rarr; **Compose and reply**.</li>
+              <li>Under **Email signature**, paste (**Ctrl+V**) into the text box.</li>
+              <li>Click **Save**.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Raw HTML Toggle -->
+        <div class="glass-card rounded-2xl p-6 shadow-xl space-y-3">
+          <div class="flex items-center justify-between">
+            <h3 class="font-heading font-semibold text-slate-200 text-sm">
+              Raw HTML Code
+            </h3>
+            <button onclick="copyRawCode()" class="text-xs text-indigo-400 hover:text-indigo-300 transition-colors font-medium">
+              Copy Raw Code
+            </button>
+          </div>
+          <div class="relative">
+            <textarea id="raw-code-box" readonly class="w-full h-32 bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-[10px] font-mono text-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-700"></textarea>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center mt-16 text-xs text-slate-500">
+      &copy; 2026 Federico Bucayan Rivera. Crafted with precision for high-performance communication.
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Initialize
+    window.onload = function() {
+      updateRawCode();
+    };
+
+    // Update the raw HTML code container
+    function updateRawCode() {
+      const sigElement = document.getElementById('signature-preview-container');
+      const rawCodeBox = document.getElementById('raw-code-box');
+      rawCodeBox.value = sigElement.innerHTML.trim();
+    }
+
+    // Dynamic Image URL Update
+    function updateImageUrl(newUrl) {
+      const img = document.getElementById('sig-avatar');
+      img.src = newUrl;
+      updateRawCode();
+    }
+
+    // Toggle Preview Background (Light vs. Dark)
+    function togglePreviewBg(mode) {
+      const previewOuter = document.getElementById('preview-outer');
+      const btnLight = document.getElementById('bg-btn-light');
+      const btnDark = document.getElementById('bg-btn-dark');
+      
+      if (mode === 'light') {
+        previewOuter.className = 'p-8 signature-container bg-white flex items-center justify-center min-h-[200px]';
+        btnLight.className = 'px-2.5 py-1 rounded-md bg-slate-800 text-white font-medium shadow-sm transition-all duration-200';
+        btnDark.className = 'px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition-all duration-200';
+      } else {
+        previewOuter.className = 'p-8 signature-container bg-[#0f172a] flex items-center justify-center min-h-[200px]';
+        btnLight.className = 'px-2.5 py-1 rounded-md text-slate-400 hover:text-white transition-all duration-200';
+        btnDark.className = 'px-2.5 py-1 rounded-md bg-slate-800 text-white font-medium shadow-sm transition-all duration-200';
+      }
+    }
+
+    // Copy Rich Text
+    async function copySignature() {
+      const container = document.getElementById('signature-preview-container');
+      const signatureHtml = container.innerHTML;
+      const signatureText = container.innerText;
+      
+      try {
+        if (navigator.clipboard && window.ClipboardItem) {
+          const htmlBlob = new Blob([signatureHtml], { type: 'text/html' });
+          const textBlob = new Blob([signatureText], { type: 'text/plain' });
+          const data = [new ClipboardItem({
+            'text/html': htmlBlob,
+            'text/plain': textBlob
+          })];
+          await navigator.clipboard.write(data);
+        } else {
+          // Fallback selection copy
+          const range = document.createRange();
+          range.selectNode(container);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+          document.execCommand('copy');
+          window.getSelection().removeAllRanges();
+        }
+        
+        // Visual Success Feedback
+        const btn = document.getElementById('copy-btn');
+        const oldContent = btn.innerHTML;
+        btn.innerHTML = `
+          <svg class="w-5 h-5 mr-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Signature Copied!
+        `;
+        btn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+        btn.classList.add('bg-emerald-600', 'hover:bg-emerald-700');
+        
+        setTimeout(() => {
+          btn.innerHTML = oldContent;
+          btn.classList.remove('bg-emerald-600', 'hover:bg-emerald-700');
+          btn.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
+        }, 2000);
+      } catch (err) {
+        console.error('Copy failed: ', err);
+        // Direct Selection fallback
+        try {
+          const range = document.createRange();
+          range.selectNode(container);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+          document.execCommand('copy');
+          window.getSelection().removeAllRanges();
+          
+          alert('Signature copied via fallback selection. You can now paste into your email settings.');
+        } catch (fErr) {
+          alert('Could not copy automatically. Please drag-select the preview, copy it, and paste it.');
+        }
+      }
+    }
+
+    // Copy Raw HTML Code
+    async function copyRawCode() {
+      const rawCodeBox = document.getElementById('raw-code-box');
+      try {
+        await navigator.clipboard.writeText(rawCodeBox.value);
+        alert('Raw HTML code copied to clipboard!');
+      } catch (err) {
+        rawCodeBox.select();
+        document.execCommand('copy');
+        alert('Raw HTML code copied to clipboard!');
+      }
+    }
+  </script>
+</body>
+</html>

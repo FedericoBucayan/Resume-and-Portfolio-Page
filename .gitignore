@@ -1,0 +1,16 @@
+# Personal & Financial Documents
+*.xlsx
+*.xls
+*.csv
+Salario_Bruto.xlsx
+calculadora_liquidacion.html
+tools/salary_history.json
+
+# Environment & Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

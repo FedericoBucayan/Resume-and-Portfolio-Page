@@ -9,7 +9,8 @@ assets_dir = os.path.join(project_root, "assets")
 # Define local paths to the projects' PDF files
 pdf_paths = {
     os.path.join(assets_dir, 'Retail_Performance_PBI.jpg'): r'C:\Users\bucay\OneDrive\Documents\Fede\AI Test\Retail\Retail_Performance_Dashboard_PBI_PDF.pdf',
-    os.path.join(assets_dir, 'Demand_Planning_PBI.jpg'): r'C:\Users\bucay\OneDrive\Documents\Fede\AI Test\Demand Planning\Demand_Planning_Dashboard_PBI_PDF.pdf'
+    os.path.join(assets_dir, 'Demand_Planning_PBI.jpg'): r'C:\Users\bucay\OneDrive\Documents\Fede\AI Test\Demand Planning\Demand_Planning_Dashboard_PBI_PDF.pdf',
+    os.path.join(assets_dir, 'Retail_Ecommerce_Analytics_PBI.jpg'): r'C:\Users\bucay\OneDrive\Documents\Fede\AI Test\DTC Project 1\Retail_Ecommerce_Analytics_PBI_PDF.pdf'
 }
 
 def update_screenshots():

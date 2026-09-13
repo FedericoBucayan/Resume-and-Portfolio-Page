@@ -4,7 +4,7 @@ echo ===================================================
 echo   Updating Power BI Dashboard Portfolio Screenshots
 echo ===================================================
 echo.
-py update_screenshots.py
+py tools\update_screenshots.py
 echo.
 echo ===================================================
 echo   Finished! Refresh your browser to see updates.
