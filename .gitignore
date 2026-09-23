@@ -14,3 +14,7 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# AI Agent Config & Skill Installers
+.agents/
+scorecard.json
